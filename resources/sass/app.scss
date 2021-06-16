@@ -1,0 +1,154 @@
+$c_green: #9DD458;
+$c_white: #ffffff;
+$c_black: #000000;
+$c_gray: #9D9D9D;
+$c_lightgray: #F4F4F4;
+$c_darkgray: #5C5C5C;
+
+$f_sans: Inter, sans-serif;
+
+$border: 1px solid $c_lightgray;
+
+body {
+  margin: 0;
+  background-color: $c_green;
+  font-family: $f_sans;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 100px auto;
+  background: $c_white;
+  border-radius: 30px;
+}
+
+.headline {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.header {
+  padding: 44px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: $border;
+
+  &__right-area {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    &>*:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.products {
+  padding: 40px 60px;
+  border: 0.001px solid transparent;
+}
+
+.products-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: inline-block;
+  width: 210px;
+  border: 1px solid #F8F8F8;
+  box-sizing: border-box;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.03);
+  border-radius: 40px;
+  padding: 20px 32px 32px;
+  position: relative;
+
+  &__title {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 14px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__price-label {
+    display: block;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #BDBDBD;
+    margin-bottom: 2px;
+  }
+
+  &__add-sign {
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 32px;
+    color: #D3D3D3;
+  }
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: $c_black;
+  text-decoration: none;
+
+  &__image {
+    margin-right: 16px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__main-text {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &__secondary-text {
+    font-size: 14px;
+    line-height: 17px;
+    color: $c_gray;
+  }
+}
+
+.cart {
+  color: $c_darkgray;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    margin-right: 8px;
+  }
+}
+
+.profile {
+  display: flex;
+}
